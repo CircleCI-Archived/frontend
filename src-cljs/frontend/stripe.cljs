@@ -8,8 +8,8 @@
 
 (def stripe-key
   (if (env/production?)
-    "pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9"
-    "pk_Np1Nz5bG0uEp7iYeiDIElOXBBTmtD"))
+    "foo"
+    "bar"))
 
 (def checkout-defaults {:key stripe-key
                         :name "CircleCI"

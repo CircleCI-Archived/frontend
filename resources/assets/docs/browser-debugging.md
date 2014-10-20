@@ -1,7 +1,7 @@
 <!--
 
 title: Interacting with the browser on CircleCI's VM
-last_updated: May 30, 2014
+last_updated: October 20, 2014
 
 -->
 
@@ -24,6 +24,8 @@ To make this work with build artifacts, you need to save the screenshot to the
 `$CIRCLE_ARTIFACTS` directory.
 
 ## Interact with the browser over VNC
+
+### Spawning your own X Server
 
 VNC allows you to view and interact with the browser that is running your tests. This will only work if you're using a driver that runs a real browser. You will be able to interact with a browser that Selenium controls, but phantomjs is headless -- there is nothing to interact with.
 
@@ -49,6 +51,27 @@ Enter the password `password` when it prompts you for a password. Your connectio
 Start your VNC viewer and connect to `localhost:5902`, enter the password you entered when it prompts you for a password. You should see a display containing a terminal window. You can ignore any warnings about an insecure or unencrypted connection. Your connection is secured through the SSH tunnel.
 
 Now you can run your integration tests from the command line and watch the browser for unexpected behavior. You can even interact with the browser &mdash; it's as if the tests were running on your local machine!
+
+### Sharing Circle's X Server
+
+If you do not want to just run your tests on Circle, but also attach to a running browser session, this can be achieved by attaching a VNC server to X.
+
+Following configuration will download [`x11vnc`](http://www.karlrunge.com/x11vnc/index.html) and start it before your tests:
+
+```
+dependencies:
+  - sudo apt-get install -y x11vnc
+test:
+  pre:
+    - x11vnc -forever -nopw:
+        background: true
+```
+
+Now [start an SSH build](/docs/ssh-build) and connect to it with your tests running. You can either use a VNC viewer that is capable of SSH tunneling, or set up a tunnel on your own:
+
+```
+$ ssh -p PORT ubuntu@IP_ADDRESS -L 5900:localhost:5900
+```
 
 ## X11 forwarding over SSH
 

@@ -104,7 +104,7 @@
            [:h5 "We'd love to see"]
            [:ul
             [:li
-             "People who have used functional languages in anger (Clojure, Haskell, Scheme, Lisp, Clojure, Scala, OCaml, etc)."]
+             "People who have used functional languages in anger (Clojure, Haskell, Scheme, Lisp, Scala, OCaml, etc)."]
             [:li "If you've built or scaled large distributed systems."]
             [:li "People who love trying new, cutting-edge things."]
             [:li

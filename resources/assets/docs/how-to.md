@@ -14,6 +14,7 @@ children:
   - android
   - browser-testing-with-sauce-labs
   - continuous-deployment-with-heroku
+  - pushing-packages-to-packagecloud
   - deploy-google-app-engine
   - deploy-bluemix
   - continuous-deployment-with-ninefold

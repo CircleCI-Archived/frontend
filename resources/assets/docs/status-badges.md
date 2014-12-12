@@ -11,8 +11,10 @@ README, a dashboard, or anywhere else you can imagine!
 Here's our current build status:
 ![](https://circleci.com/gh/circleci/circle.png?circle-token=3cc80b12ab3627373c76e13735b8bc00a1259b9e)</img>
 
-The status images are also available in "shield" style:
+The status images are also available in "shield" style, "flat" style and "flat-square" style:
 ![](https://circleci.com/gh/circleci/circle.svg?style=shield&circle-token=3cc80b12ab3627373c76e13735b8bc00a1259b9e)</img>
+![](https://circleci.com/gh/circleci/circle.svg?style=flat&circle-token=3cc80b12ab3627373c76e13735b8bc00a1259b9e)</img>
+![](https://circleci.com/gh/circleci/circle.svg?style=flat-square&circle-token=3cc80b12ab3627373c76e13735b8bc00a1259b9e)</img>
 
 In the project settings for each of your repositories, there's a "Status Badges" section that can generate code for Markdown, rst, etc.  Or if you want to tweak them manually, how they work is straightforward:
 

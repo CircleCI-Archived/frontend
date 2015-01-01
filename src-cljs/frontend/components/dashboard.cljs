@@ -21,7 +21,6 @@
             current-project (get-in data state/project-data-path)
             plan (:plan current-project)
             project (:project current-project)
-            nav-ch (get-in data [:comms :nav])
             nav-data (:navigation-data data)
             page (js/parseInt (get-in nav-data [:query-params :page] 0))
             builds-per-page (:builds-per-page data)]

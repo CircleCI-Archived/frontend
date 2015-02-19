@@ -2,7 +2,7 @@
 
 title: Continuous Integration and Continuous Deployment with Node.js
 short_title: Node.js
-last_updated: March 12, 2014
+last_updated: February 13, 2015
 
 -->
 
@@ -25,6 +25,18 @@ as our default version. If you'd like a specific version, then you can specify i
 machine:
   node:
     version: 0.10.22
+```
+
+#### node 0.12
+
+Until containers are updated (coming soon!) node v0.12.x requires a source compilation that takes ~10 minutes.  If you would like to reduce this significantly (~5 seconds), add the following to your circle.yml:
+
+```
+machine:
+  pre:
+    - curl https://raw.githubusercontent.com/creationix/nvm/v0.23.3/install.sh | bash
+  node:
+    version: 0.12
 ```
 
 ### Dependencies

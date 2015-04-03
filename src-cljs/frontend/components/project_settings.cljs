@@ -651,6 +651,8 @@
 (def status-styles
   {"badge" {:label "Badge" :string ".png?style=badge"}
    "shield" {:label "Shield" :string ".svg?style=shield"}
+   "flat" {:label "Flat" :string ".svg?style=flat"}
+   "flat-square" {:label "FlatSquare" :string ".svg?style=flat-square"}
    "svg" {:label "Badge" :string ".svg?style=svg"}})
 
 (def status-formats

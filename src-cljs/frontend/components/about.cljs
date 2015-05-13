@@ -26,7 +26,7 @@
     :email "paul@circleci.com"
     :img-path (scaled-image-path "paul")
     :visible true
-    :bio "Before founding CircleCI, Paul worked on the Firefox Javascript engine and wrote phc, and open source PHP compiler. He did his PhD on compilers and static analysis in Dublin and is a YCombinator alumni."}
+    :bio "Before founding CircleCI, Paul worked on the Firefox Javascript engine and wrote phc, an open source PHP compiler. He did his PhD on compilers and static analysis in Dublin and is a YCombinator alumni."}
    {:name "Jenneviere Villegas"
     :img-path (scaled-image-path "jenneviere")
     :visible true

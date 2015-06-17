@@ -36,8 +36,9 @@
                     :value email
                     :id (str login "-email")}]
            [:label {:for (str login "-email")}
-            [:i.fa.fa-exclamation-circle]
-            " Fix Email"]]
+            [:i.fa.fa-exclamation-circle
+             {:title "Entering an Email address is required for sending invites to this user"}]
+            " Email not available"]]
           [:label.invite-select {:id (str login "-label")
                                  :for (str login "-checkbox")}
            [:input {:type "checkbox"

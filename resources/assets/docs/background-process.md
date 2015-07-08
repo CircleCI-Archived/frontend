@@ -13,7 +13,7 @@ to the end of your command line. Instead, you set the background flag on the com
 machine:
   post:
     - ./daemon:
-        background: true
+          background: true
 ```
 
 If your server takes more than a moment to start, it might be worth adding a
@@ -23,7 +23,7 @@ If your server takes more than a moment to start, it might be worth adding a
 machine:
   post:
     - ./daemon:
-        background: true
+          background: true
     - sleep 5
 ```
 

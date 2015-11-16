@@ -15,7 +15,7 @@ file, check out our [sample file](/docs/config-sample).
 
 Should you have a test failure, our [troubleshooting section](/docs/troubleshooting)
 can likely tell you the best way to solve the problem.
-If you find yourself repeateadly consulting this guide, please
+If you find yourself repeatedly consulting this guide, please
 [contact us](mailto:sayhi@circleci.com) and let us know what you're working on.
 We'll try to make it easier for you.
 

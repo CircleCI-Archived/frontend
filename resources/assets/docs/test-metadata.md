@@ -23,6 +23,14 @@ Add this to your gemfile:
 gem 'rspec_junit_formatter', '0.2.2'
 ```
 
+And modify your test command to this:
+
+````
+test:
+  override:
+    - RAILS_ENV=test bundle exec rspec -r rspec_junit_formatter --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml
+````
+
 For Minitest:
 
 Add this to your gemfile:

@@ -205,8 +205,7 @@ mentioned [above](#customizing-your-build). Note that [environment variables](/d
 the UI are encrypted and secure and can be used to store credentials related to signing and deployment.
 
 [FastLane](https://fastlane.tools/) and [Shenzhen](http://nomad-cli.com/#shenzhen)
-are pre-installed on the container image. These are the tools that we suggest that
-you use to build a signed iOS app and distribute to your beta-testers.
+are pre-installed on the container image. It is recommended to use [fastlane](https://fastlane.tools/) to build, sign and distribute your iOS app to beta-testers.
 
 ### Provision Profiles and Developer Certificates
 CircleCI will automatically locate any provisioning profiles that are present in

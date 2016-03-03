@@ -204,7 +204,7 @@ You can build a signed app and deploy to various destinations using the customiz
 mentioned [above](#customizing-your-build). Note that [environment variables](/docs/environment-variables#custom) set in
 the UI are encrypted and secure and can be used to store credentials related to signing and deployment.
 
-[FastLane](https://fastlane.tools/) and [Shenzhen](http://nomad-cli.com/#shenzhen)
+[fastlane](https://fastlane.tools/) and [Shenzhen](http://nomad-cli.com/#shenzhen)
 are pre-installed on the container image. These are the tools that we suggest that
 you use to build a signed iOS app and distribute to your beta-testers.
 

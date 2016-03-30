@@ -250,6 +250,27 @@ machine:
 
 See [supported PHP versions](/docs/environment#php) for a complete list.
 
+It is also possible to run your unit tests in different PHP versions by
+switching the php version after running the tests, and then calling 
+your tests again. Here's an example of how that might work:
+
+```
+machine:
+  php:
+    version: 5.4.5
+test:
+  post:
+    - phpenv local 5.4.37 && php -v
+    - phpunit
+    - phpenv local 5.5.21 && php -v
+    - phpunit
+    - phpenv local 5.6.5 && php -v
+    - phpunit
+```
+
+With this example, your tests are initially run in PHP 5.4.5, followed by
+5.4.37, 5.5.21 and 5.6.5.
+
 ### Python version
 
 CircleCI uses [pyenv](https://github.com/yyuu/pyenv)

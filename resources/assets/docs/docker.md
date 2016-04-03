@@ -30,6 +30,22 @@ You will then be able to use the `docker` command throughout your
 `circle.yml` file. Note that you don't need to use `sudo`
 to use the command on CircleCI.
 
+###Using a Different Version of Docker
+
+CircleCI uses a custom fork of Docker to work inside of our unprivileged LXC containers.
+
+If you would like to use a version of Docker other than the default version you can download and install a different version from our S3 repository by adding the following to your `circle.yml` file. Be sure to replace the version in `- sudo curl -L -o /usr/bin/docker 'https://s3-external-1.amazonaws.com/circle-downloads/docker-1.8.2-circleci'` with whichever version you would like to use.
+
+```
+machine:
+  pre:
+    - echo 'DOCKER_OPTS="-s btrfs -e lxc -D --userland-proxy=false"' | sudo tee -a /etc/default/docker
+    - sudo curl -L -o /usr/bin/docker 'https://s3-external-1.amazonaws.com/circle-downloads/docker-1.8.2-circleci'
+    - sudo chmod 0755 /usr/bin/docker
+  services:
+    - docker
+```
+
 ###Deployment to a Docker registry
 
 One key use of Docker on CircleCI is to use Docker to build base images to deploy to a

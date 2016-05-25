@@ -103,7 +103,7 @@
                    :target "_blank"}
                   {:on-click #(elevio/show-status!)})
                 (when (seq components-affected)
-                  [:h4 (str desc " - components affected: "
+                  [:h4 (str desc " - components affected: CircleCI [Operational], "
                             (clojure.string/join ", " (map (comp str :name) components-affected)))])
                 (when updated-incident
                   (incident-markup updated-incident))]])))))

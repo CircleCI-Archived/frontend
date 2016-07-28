@@ -40,7 +40,7 @@ Install [Leiningen](http://leiningen.org/).
 ### nginx
 
 You'll need to install nginx to serve the site over `https` - we
-require local development to user SSL to support using development
+require local development to use SSL to support using development
 backends against production APIs in a secure way.
 
 ```

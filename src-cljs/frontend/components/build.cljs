@@ -49,7 +49,7 @@
        "Looks like we had a bug in our infrastructure, or that of our providers (generally "
        [:a {:href "https://status.github.com/"} "GitHub"]
        " or "
-       [:a {:href "https://status.aws.amazon.com/"} "AWS"]
+       [:a {:href "http://status.aws.amazon.com/"} "AWS"]
        ") We should have automatically retried this build. We've been alerted of"
        " the issue and are almost certainly looking into it, please "
        (common/contact-us-inner owner)

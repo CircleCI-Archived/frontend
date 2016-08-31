@@ -53,7 +53,7 @@
        ") We should have automatically retried this build. We've been alerted of"
        " the issue and are almost certainly looking into it, please "
        (common/contact-us-inner owner)
-       " if you're interested in the cause of the problem."])))
+       " if you're interested in the cause or if the problem persists."])))
 
 (defn report-error [{:keys [build show-premium-content?]} owner]
   (let [build-id (build-model/id build)

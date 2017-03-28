@@ -558,3 +558,9 @@ top.  The remaining keys/values goes into the bottom."
                                               remainder))
           processed-children (map dissoc-nil-react-keys children)]
       (into [tag safe-attrs] processed-children))))
+
+(defn convert-emoji
+  "Converts a text with emoji shortcodes (such as :sparkles:) into
+  actual emoji unicode, such as ✨."
+  [text]
+  (.shortnameToUnicode js/emojione text))

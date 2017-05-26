@@ -24,7 +24,7 @@
       str
       goog.Uri.parse
       .getQueryData
-      (.get (str "feature-" (name feature)))))
+      (.get (feature-flag-key-name feature))))
 
 (defn set-in-query-string? [feature]
   (some? (get-in-query-string feature)))

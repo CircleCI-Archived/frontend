@@ -1,5 +1,6 @@
 [
   "../vendor/console-shim.js" ;; TODO: necessary?
+  "../vendor/emojione-2.2.7-js/emojione.min.js" ;; NOTE: Not using bower because repo is very large
   "../../components/jquery/dist/jquery.min.js" ;; TODO: used by bootstrap
   "../../components/bootstrap3-typeahead/bootstrap3-typeahead.min.js" ;; docs typeahead
   "../../components/jquery-placeholder/jquery.placeholder.min.js" ;; TODO: necessary?

@@ -105,6 +105,7 @@
             :id (str "commit-line-tooltip-hack-" commit)
             :dangerouslySetInnerHTML {:__html (let [vcs-url (:vcs_url build)]
                                                 (-> subject
+                                                    (utils/convert-emoji)
                                                     (gstring/htmlEscape)
                                                     (linkify)
                                                     (maybe-project-linkify (vcs-url/vcs-type vcs-url)

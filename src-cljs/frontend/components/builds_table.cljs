@@ -176,7 +176,7 @@
            (avatar (:user build) :trigger trigger)])
         [:span.recent-log
          {:title (:body build)}
-         (:subject build)]]]
+         (utils/convert-emoji (:subject build))]]]
       [:div.build-engine.screen-md-down (build-engine-popover platform owner)]]
 
      [:div.metadata
@@ -293,7 +293,7 @@
                build
                [:span.recent-log
                 {:title (:body build)}
-                (:subject build)])]]
+                (utils/convert-emoji (:subject build))])]]
 
        [:div.metadata
         [:div.metadata-row.timing

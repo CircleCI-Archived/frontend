@@ -1222,6 +1222,8 @@
             :template :image}
    "markdown" {:label "Markdown"
                :template #(str "[![CircleCI](" (:image %) ")](" (:target %) ")")}
+   "org" {:label "Org"
+          :template #(str "[[" (:target %) "][" (:image %) "]]")}
    "textile" {:label "Textile"
               :template #(str "!" (:image %) "!:" (:target %))}
    "rdoc" {:label "Rdoc"

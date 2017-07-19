@@ -49,10 +49,12 @@
   from {
     transform: translate3d(0, -5%, 0);
     visibility: visible;
+    opacity: 0;
   }
 
   to {
     transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
@@ -80,8 +82,9 @@
 }
 
 .animated {
-  animation-duration: 0.4s;
+  animation-duration: 0.2s;
   animation-fill-mode: both;
+  animation-timing-function: ease-out;
 }
 
 // Container actions transitions

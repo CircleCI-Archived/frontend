@@ -119,14 +119,14 @@
                   {:title (str "How to configure " (vcs-url/project-name (get-in project-data [:project :vcs_url])))}
                   (html
                     [:div
-                     [:b "Option 1"]
-                     [:p "Do nothing! CircleCI infers many settings automatically. Works great for Ruby, Python, NodeJS, Java and Clojure. However, if it needs tweaks or doesn't work, see below."]
-                     [:b "Option 2"]
-                     [:p
-                      "Override inferred settings and add new test commands "
+                     [:p "After August 31, 2018, CircleCI 1.0 will no longer be available for Linux and macOS users. You can find guides for transitioning from 1.0 to 2.0 and a full timeline on planned changes " [:a {:href "https://circleci.com/sunset1-0/"} "here"]]
+                     [:b "CircleCI 2.0"]
+                     [:p "Effective with CircleCI 2.0, all configuration is captured in the project's "[:a {:href "https://circleci.com/docs/2.0/configuration-reference/"} ".circleci/config.yml file"] ]
+                     [:b "CircleCI 1.0 - Option 1"]
+                     [:p "Override inferred settings and add new test commands "
                       [:a {:href "#setup"} "through the web UI"]
                       ". This works great for prototyping changes."]
-                     [:b "Option 3"]
+                     [:b "CircleCI 1.0 - Option 2"]
                      [:p
                       "Override all settings via a "
                       [:a {:href "https://circleci.com/docs/configuration/"} "circle.yml file"]

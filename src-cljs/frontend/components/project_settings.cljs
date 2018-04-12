@@ -129,7 +129,7 @@
                      [:b "Option 3"]
                      [:p
                       "Override all settings via a "
-                      [:a {:href "https://circleci.com/docs/configuration/"} "circle.yml file"]
+                      [:a {:href "https://circleci.com/docs/2.0/configuration-reference/"} "config.yml file"]
                       " in your repo. Very powerful."]]))]
                (if (:following project)
                  [(card/titled

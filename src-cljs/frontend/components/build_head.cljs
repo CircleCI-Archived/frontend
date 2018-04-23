@@ -490,7 +490,7 @@
                    [:span
                     [:i.fa.build-tests-toggle-icon {:class (if (om/get-state owner :is-open?) "expanded")}]
                     (if (om/get-state owner :is-open?)
-                      "Less"
+                      "Fewer"
                       "More")]]]
                  (when (om/get-state owner :is-open?)
                    (om/build-all build-tests-file-block bottom-map))))))

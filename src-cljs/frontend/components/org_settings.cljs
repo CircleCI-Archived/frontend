@@ -284,7 +284,7 @@
               [:a {:href "mailto:billing@circleci.com"} "billing@circleci.com"]]]}
 
    {:question "What if I am building open-source?"
-    :answer [[:div "We also offer the Seed plan for OS X open-source projects. Contact us at "
+    :answer [[:div "We also offer the Seed plan (at 1x concurrency) for OS X open-source projects. Contact us at "
               [:a {:href "mailto:billing@circleci.com"} "billing@circleci.com"]
               " for access. If you are building a bigger open-source project and need more resources, let us know how we can help you!"]]}])
 

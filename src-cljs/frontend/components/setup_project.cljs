@@ -158,11 +158,11 @@
   [selected-config-string selected-project]
   [{:number "1."
     :text [:p
-           "Create a folder named " [:code ".circleci"] " and add a file" [:code "config.yml"]
-           " (so that the filepath be in " [:code ".circleci/config.yml"] ")."]
+           "Create a folder named " [:code ".circleci"] " and create a file called" [:code "config.yml"]
+           " (so that the filepath is " [:code ".circleci/config.yml"] ")."]
     :button ""}
    {:number "2."
-    :text [:p "Populate the config.yml with the contents of the sample .yml (shown below)."]
+    :text [:p "Populate the " [:code "config.yml"] " with the contents of the sample .yml (shown below)."]
     :button (copy-to-clipboard selected-config-string)}
    {:number "3."
     :text [:p "Update the sample .yml to reflect your project's configuration."]

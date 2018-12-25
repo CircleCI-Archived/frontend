@@ -120,7 +120,7 @@ To have a process watch for changes and run the tests every time you make change
 lein doo chrome dev-test auto
 ```
 
-The default option is `auto`, so it will run in that state if you ommit that argument. You can also use `phantom `, `firefox`, and a variety of our js enviornments to run the tests on. For full documentation read [lein doo's README](https://github.com/bensu/doo/)
+The default option is `auto`, so it will run in that state if you ommit that argument. You can also use `phantom `, `firefox`, and a variety of our js environments to run the tests on. For full documentation read [lein doo's README](https://github.com/bensu/doo/)
 
 ### Adding Tests
 

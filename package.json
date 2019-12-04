@@ -2,7 +2,7 @@
   "name": "circle-ui",
   "version": "1.0.0",
   "dependencies": {
-    "bower": "1.8.0",
+    "bower": "1.8.8",
     "less": "1.7.4"
   },
   "devDependencies": {

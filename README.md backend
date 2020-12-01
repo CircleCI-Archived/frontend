@@ -1,4 +1,4 @@
-# CircleCI's frontend
+# CircleCI's backend
 
 [![CircleCI](https://circleci.com/gh/circleci/frontend.svg?style=svg)](https://circleci.com/gh/circleci/frontend)
 
